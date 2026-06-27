@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Consultation | Saksham Parmar & Associates</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+
+    <!-- Navbar -->
+    <nav class="bg-slate-900 text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-serif font-bold tracking-wide text-amber-400">SAKSHAM PARMAR & ASSOCIATES</a>
+            <div class="space-x-6 text-sm font-medium tracking-wider uppercase">
+                <a href="index.html" class="hover:text-amber-400 transition">About</a>
+                <a href="index.html#practice" class="hover:text-amber-400 transition">Practice Areas</a>
+                <a href="consultation.html" class="text-amber-400 font-bold">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Form Section -->
+    <main class="max-w-xl mx-auto py-12 px-6">
+        <div class="bg-white rounded-lg shadow-md p-8 border-t-4 border-amber-500">
+            <h1 class="text-2xl font-serif font-bold text-slate-950 mb-2">Chamber Consultation Form</h1>
+            <p class="text-xs text-gray-500 mb-6">Please provide your details below to establish an analytical intake file for counsel review.</p>
+            
+            <form action="https://formspree.io/f/xoqggyoe" method="POST" class="space-y-5">
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Full Name</label>
+                    <input type="text" name="name" required class="w-full border border-gray-300 rounded p-2.5 text-sm focus:outline-none focus:border-amber-500">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Email Address</label>
+                    <input type="email" name="email" required class="w-full border border-gray-300 rounded p-2.5 text-sm focus:outline-none focus:border-amber-500">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Contact Phone Number</label>
+                    <input type="tel" name="phone" required class="w-full border border-gray-300 rounded p-2.5 text-sm focus:outline-none focus:border-amber-500" placeholder="+91 ">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Legal Area of Inquiry</label>
+                    <select name="practice_area" class="w-full border border-gray-300 rounded p-2.5 text-sm focus:outline-none focus:border-amber-500 bg-white">
+                        <option>Civil Litigation Matter</option>
+                        <option>Criminal Defense & Bail</option>
+                        <option>Corporate Advisory</option>
+                        <option>Appellate or Writ Matters</option>
+                        <option>General Legal Consultation</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Reason for Contact / Brief Case Summary</label>
+                    <textarea name="reason" rows="4" required class="w-full border border-gray-300 rounded p-2.5 text-sm focus:outline-none focus:border-amber-500" placeholder="Describe the key elements of your matter..."></textarea>
+                </div>
+
+                <div class="pt-2">
+                    <button type="submit" class="w-full bg-slate-950 text-amber-400 p-3 rounded font-bold uppercase tracking-wider text-xs hover:bg-slate-800 transition shadow-sm">
+                        Submit Chamber Request
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>
